@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
+
 router.post('/register', (req, res, next) => {
     console.log(res.body);
     User.find({ email: req.body.email })
@@ -32,17 +33,15 @@ router.post('/register', (req, res, next) => {
                             firstName: req.body.firstname,
                             lastName: req.body.lastname,
                             role: req.body.role,
-                            rowId: req.body.rowId
+                            rowId: req.body.rowId,
+                            telephoneNo: req.body.telephoneNo
                         });
                         user
                             .save()
                             .then(result => {
                                 console.log({ 
                                     Message1: ' User Signed up ',  
-                                    E_mail: req.body.email,
-                                    Hashed_password: hash,
-                                    FirstName: req.body.firstname,
-                                    LastName: req.body.lastname
+                                    Reselt: result
                                 });
                                 res.status(201).json({
                                     user: user,
@@ -64,18 +63,11 @@ router.post('/register', (req, res, next) => {
 
 
 router.post('/login', (req, res) =>{
+    console.log(req.body)
     User.find({ email: req.body.email })
         .exec()
         .then(user => {
-            User.findById(user[0]._id).then(abc =>{
-                console.log(abc)
-            }
-                
-            )
             console.log(user)
-            res.json({
-                message: user
-            })
             if(user.length < 1){
                 return res.status(401).json({
                     message: 'Authantication failed. E-mail not exist.'
@@ -83,14 +75,17 @@ router.post('/login', (req, res) =>{
             }
             bcrypt.compare(req.body.password, user[0].password, (err, result) => {
                 if (result){
+                    console.log(result)
                     token = jwt.sign({user: user[0]}, 'secretkey',(err, token) => {
                         if(err){
-                            res.json({ error: err })
-                        } else {
+                            res.json({ error: err })  
+                        } else { 
                             console.log('Token is:- '+token);
                             return res.status(200).json({
                                 state: true,
-                                JWT_Token: token
+                                JWT_Token: token,
+                                data: user
+
                             })
                         }
                         console.log('token genetas : '+ this.token);
@@ -110,6 +105,34 @@ router.post('/login', (req, res) =>{
             }); 
         });
 });
+
+router.get('/:_id',(req,res) => {
+    User.findById( req.params._id )
+        .exec()
+        .then(user => {
+            if(!user){
+                return res.status(401).json({
+                    message: 'Authantication failed. E-mail not exist.'
+                });
+            }
+            res.status(500).json({
+                usrDetails: user
+            }); 
+        })
+        .catch(err => {
+            console.log(err);
+                res.status(500).json({
+                error: err
+            }); 
+        });
+})
+
+router.get('/', (req, res, next) => {
+    User.find({role: 'qualityChecker'}).exec().then(docs => {
+        console.log(docs)
+        res.status(200).json(docs)
+    })
+})
 
 
 module.exports = router
