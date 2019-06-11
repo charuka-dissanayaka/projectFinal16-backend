@@ -67,5 +67,20 @@ router.get('/:coodinateId', (req, res, next) => {
       });
 });
 
+router.patch('/:alertId', (req, res, next) => {
+    const id = req.params.alertId;
+    Alert.update({_id: id}, {$set: {status: 'completed'}}).exec().then(ree => {
+        res.status(201).json({
+            message: 'Updated',
+            data: ree
+        })
+    }).catch(err => {
+        res.status(500).json({
+            error: err
+        });
+    })
+
+})
+
 
 module.exports = router;

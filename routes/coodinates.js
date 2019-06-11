@@ -132,5 +132,15 @@ router.patch('/:coodinateId', (req, res, next) => {
 })
 
 
+router.delete('/delete/:username', (req, res) => {
+    const { username } = req.params;
+    db.collection('username').findOneAndDelete({username: username}, 
+    (err, result) => {
+    if (err) return res.send(500, err)
+    console.log('got deleted');
+    res.redirect('/');
+    });
+});
+
 module.exports = router;
 

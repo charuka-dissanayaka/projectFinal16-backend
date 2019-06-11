@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1684"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="bra.back.svg">
+  <defs
+     id="defs1678" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="350"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1681">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2314"
+       transform="matrix(1.6110948,0,0,1.8015223,88.335159,-119.71459)">
+      <path
+         id="path2"
+         d="m 15.028364,150.68846 c 0,0 -6.3304195,-44.95641 46.502371,-52.319767 l 0.19923,-1.550194 c 0,0 -51.244496,1.550194 -48.662428,53.482081 z"
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4"
+         d="m 7.3610045,150.20427 8.2978625,0.18838 c 0,0 3.315758,4.70853 4.414308,5.65018 1.098814,0.94165 1.098814,0.94165 1.098814,0.94165 H 1.3970315 c 0,0 5.649913,-5.46179 5.963973,-6.78021 z"
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path46"
+         d="m 59.416985,109.7127 c 0,0 -37.101731,-1.50654 -44.258446,40.67969 0,0 10.170055,15.4432 33.523238,13.74854 23.353448,-1.69492 33.146738,-36.91334 13.936658,-54.42823 z"
+         stroke-miterlimit="10"
+         style="fill:#efd9e9;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10"
+         inkscape:connector-curvature="0" />
+      <rect
+         id="rect48"
+         height="77.700447"
+         width="3.2017229"
+         stroke-miterlimit="10"
+         y="70.526855"
+         x="60.722176"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10" />
+      <polygon
+         id="polygon50"
+         points="881.453,467.84 1107.205,435.766 1101.037,501.147 882.687,480.176 "
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:3;stroke-miterlimit:10"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)" />
+      <path
+         id="path52"
+         d="m 7.6499295,150.68846 c 0,0 6.3304205,-44.95641 -46.5023745,-52.319767 l -0.199231,-1.550194 c 0,0 51.244501,1.550194 48.6624325,53.482081 z"
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path54"
+         d="m -36.738424,109.7127 c 0,0 37.10172846,-1.50654 44.2584435,40.67969 0,0 -10.170055,15.4432 -33.5229745,13.74854 -23.353712,-1.69492 -33.147,-36.91334 -13.936927,-54.42823 z"
+         stroke-miterlimit="10"
+         style="fill:#efd9e9;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10"
+         inkscape:connector-curvature="0" />
+      <rect
+         id="rect56"
+         height="77.700447"
+         width="3.2014585"
+         stroke-miterlimit="10"
+         y="70.526855"
+         x="-41.245342"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10" />
+      <polygon
+         id="polygon58"
+         points="887.227,467.84 661.474,435.766 667.643,501.147 885.993,480.176 "
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:3;stroke-miterlimit:10"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)" />
+      <ellipse
+         id="ellipse60"
+         ry="3.5901313"
+         rx="3.6848521"
+         cy="133.98558"
+         cx="-39.68906"
+         stroke-miterlimit="10"
+         style="fill:#c1bfc1;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10" />
+      <ellipse
+         id="ellipse62"
+         ry="2.3620868"
+         rx="2.2676351"
+         cy="25.10668"
+         cx="137.45636"
+         stroke-miterlimit="10"
+         transform="rotate(96.148466)"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.7937119;stroke-miterlimit:10" />
+      <ellipse
+         id="ellipse64"
+         ry="3.5901313"
+         rx="3.6848521"
+         cy="133.65935"
+         cx="62.472389"
+         stroke-miterlimit="10"
+         style="fill:#c1bfc1;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10" />
+      <ellipse
+         id="ellipse66"
+         ry="2.3619354"
+         rx="2.2677438"
+         cy="133.65935"
+         cx="62.472389"
+         stroke-miterlimit="10"
+         style="fill:#3d3c3d;stroke:#000000;stroke-width:0.79374999;stroke-miterlimit:10" />
+      <g
+         id="g72"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)">
+        <line
+           id="line68"
+           y2="469.073"
+           x2="853.08002"
+           y1="445.63501"
+           x1="661.86902"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon70"
+           points="661.687,447.124 662.052,444.146 853.08,469.073 " />
+      </g>
+      <g
+         id="g78"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)">
+        <line
+           id="line74"
+           y2="469.073"
+           x2="914.76099"
+           y1="445.63501"
+           x1="1105.973"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon76"
+           points="1105.79,444.146 1106.155,447.124 914.761,469.073 " />
+      </g>
+      <g
+         id="g84"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)">
+        <line
+           id="line80"
+           y2="477.70901"
+           x2="846.91199"
+           y1="493.746"
+           x1="666.80402"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon82"
+           points="666.937,495.24 666.671,492.252 846.912,477.709 " />
+      </g>
+      <g
+         id="g90"
+         transform="matrix(0.26458333,0,0,0.26458333,-222.64234,31.745022)">
+        <line
+           id="line86"
+           y2="476.47501"
+           x2="920.92902"
+           y1="492.51199"
+           x1="1101.037"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon88"
+           points="1101.17,491.018 1100.904,494.006 920.929,476.475 " />
+      </g>
+      <rect
+         id="rect96"
+         height="9.5249996"
+         width="39.6875"
+         y="175.67836"
+         x="-9.1235971"
+         style="fill:none;stroke-width:0.26458332" />
+      <text
+         id="text98"
+         font-size="36"
+         style="font-size:9.52499962px;font-family:MyriadPro-Regular;stroke-width:0.26458332"
+         x="-9.1235971"
+         y="182.44099">Back view</text>
+    </g>
+  </g>
+</svg>

@@ -5,9 +5,37 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+      cb(null, 'uploads/');
+    },
+    filename: function(req, file, cb) {
+      cb(null, file.originalname);
+    }
+});
+
+const fileFilter = (req, file, cb) => {
+    // reject a file
+    if (file.mimetype === 'image/svg' || file.mimetype === 'image/png') {
+      cb(null, true);
+    } else {
+      cb(null, false);
+    }
+};
+  
+const upload = multer({
+    storage: storage,
+    limits: {
+      fileSize: 1024 * 1024 * 5
+    }
+});
+
 
 router.post('/register', (req, res, next) => {
-    console.log(res.body);
+    console.log(res); 
+    console.log("fghcgh"); 
     User.find({ email: req.body.email })
         .exec()
         .then(user => { 
@@ -30,8 +58,8 @@ router.post('/register', (req, res, next) => {
                             _id: new mongoose.Types.ObjectId(),
                             email: req.body.email,
                             password: hash,
-                            firstName: req.body.firstname,
-                            lastName: req.body.lastname,
+                            firstName: req.body.firstName,
+                            lastName: req.body.lastName,
                             role: req.body.role,
                             rowId: req.body.rowId,
                             telephoneNo: req.body.telephoneNo
@@ -110,14 +138,13 @@ router.get('/:_id',(req,res) => {
     User.findById( req.params._id )
         .exec()
         .then(user => {
-            if(!user){
-                return res.status(401).json({
-                    message: 'Authantication failed. E-mail not exist.'
-                });
-            }
-            res.status(500).json({
-                usrDetails: user
-            }); 
+            console.log(user)
+            // if(!user){
+            //     return res.status(401).json({
+            //         message: 'Authantication failed. E-mail not exist.'
+            //     });
+            // }
+            res.status(200).json(user); 
         })
         .catch(err => {
             console.log(err);
@@ -127,12 +154,47 @@ router.get('/:_id',(req,res) => {
         });
 })
 
-router.get('/', (req, res, next) => {
-    User.find({role: 'qualityChecker'}).exec().then(docs => {
+router.get('/Quality Checker/', (req, res, next) => {
+    User.find({role: 'Quality Checker'}).exec().then(docs => {
         console.log(docs)
         res.status(200).json(docs)
     })
+});
+
+router.get('/', (req, res, next) => {
+    User.find().then(docs => {
+        console.log(docs)
+        res.status(200).json(docs)
+    })
+});
+
+router.patch('/imageurl/:userId', upload.single('imageUrl'), (req, res, next) => {
+    console.log(req.file)
+    const id = req.params.userId;
+    const image = 'http://localhost:3000/' + req.file.originalname;
+    User.update({_id: id}, {$set: {
+        imageUrl: image,
+    }}).then(doc => {
+        res.status(201).json(doc)
+    }).catch(err => {
+        res.status(500).json({
+            error: err
+        })
+    })
+} )
+
+router.delete("user/:id", function(req,res){
+    user
+    .findByIdAndRemove(req.params.id)
+    .exec()
+    .then(doc => {
+        if(!doc){ return res.status(404).end();}
+        return res.status(204).end();
+    })
+    .catch(err => next(err))
 })
 
 
-module.exports = router
+
+
+module.exports = router;

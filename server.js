@@ -23,6 +23,7 @@ mongoose.connect(db,{ useNewUrlParser: true }, err =>{
 
 app.use(bodyParser.json())
 app.use(cors());
+app.use(express.static('uploads'))
 
 app.use("/user" , user);
 app.use("/intimate", intimate);
